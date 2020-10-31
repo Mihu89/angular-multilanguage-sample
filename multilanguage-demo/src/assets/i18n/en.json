@@ -3,6 +3,9 @@
         "site-name": "Contact page"
     },
     "home": {
+        "add-user": "Add user form",
+        "conditions": "Conditions of using service",
+        "conditions-label": "Conditions",
         "email": "Email",
         "mobile": "Mobile",
         "name": "Name",

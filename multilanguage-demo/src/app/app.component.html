@@ -10,3 +10,32 @@
     </select>
   </span>
 </nav>
+<div class="container">
+  <form action="">
+    <h2>{{'home.add-user' | translate }}</h2>
+    <div class="form-group">
+      <label for="name">{{'home.name' | translate}}</label>
+      <input type="text" name="name" class="form-control">
+      <small *ngIf="false" class="text-danger">{{'home.name-required' | translate}}</small>
+    </div>
+    <div class="form-group">
+      <label for="email">{{'home.email' | translate}}</label>
+      <input type="text" name="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="mobile">{{'home.mobile' | translate}}</label>
+      <input type="tel" name="mobile" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">{{'home.password' | translate}}</label>
+      <input type="password" name="password" class="form-control">
+    </div>
+    <div class="form-group form-check">
+      <label for="conditions">{{'home.conditions-label' | translate}}</label>
+      <input type="checkbox" name="conditions" class="form-check-input"/>
+      <label class="form-check-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{'home.conditions' | translate}}</label>
+    </div>
+
+    <button class="btn btn-block btn-primary">{{'shared.submit' | translate}}</button>
+  </form>
+</div>
