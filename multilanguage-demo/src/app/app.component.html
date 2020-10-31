@@ -1,10 +1,12 @@
 <nav class="navbar navbar-dark bg-primary">
   <div class="container">
-    <a href="#" class="navbar-brand">ASD</a>
+    <a href="#" class="navbar-brand">{{'home.site-name' | translate}}</a>
   </div>
   <span class="form-inline">
-    <select class="form-control"#selectedLanguage (change)="swichLanguage(selectedlanguage.value)">
-      <option value="1">One</option>
+    <select class="form-control" #selectedLanguage 
+        (change)="swichLanguage(selectedLanguage.value)">
+      <option *ngFor="let language of translate.getLangs()" [value]="language"
+        [selected]="language === translate.currentLang">{{language}}</option>
     </select>
   </span>
 </nav>
